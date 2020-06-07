@@ -1,0 +1,483 @@
+/* ==========================================================================
+    Main layout:
+    contains styling for basic HTML elements
+========================================================================== */
+body, input, select, textarea {
+    font-family: "proxima-nova", "helvetica neue";
+    font-weight: 400;
+    color: #919499;
+    font-size: 11pt;
+    line-height: 1.75em;
+    letter-spacing: 0.025em;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+/* styling for all headers*/
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: darkred;
+}
+
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a {
+    transition: color .25s ease-in-out;
+    text-decoration: bold;
+    color: grey;
+}
+
+hr {
+    border: 0;
+    border-top: solid 1px #ddd;
+    margin: 2em 0 2em 0;
+    padding-left: 1em;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+    CONTAINER
+========================================================================== */
+
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 68em;
+}
+
+/* ==========================================================================
+    Row / Column: 
+    configures the sections for the home page, allows for double columns
+========================================================================== */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row > .column1 {
+    width: 33%;
+}
+
+.column2 {
+    width:800px; 
+    margin:0 auto;
+    width:50%;
+    height:50%;
+}
+
+/* ==========================================================================
+    Scrollbox 
+    Styling for general section and article including,
+    including header styling
+========================================================================== */
+.scrollbox{
+    width:330px;
+    height:100px;
+    line-height:1.5em;
+    overflow:auto;
+    padding:5px;
+    border: 0.5px solid grey;
+    border-radius: 15px 15px 15px 15px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+    Section / Article
+    Styling for general section and article including,
+    including header styling
+========================================================================== */
+/* margin for the welcome message */
+section,
+article {
+    margin: 0 0 4em 0;
+}
+
+section:last-child,
+article:last-child {
+    margin-bottom: 0;
+}
+
+article.boxpost {
+    margin: 3em 3em 3em 3em;
+}
+
+header.style1 {
+    text-align: center;
+    padding: 0 0 0 0;
+}
+
+header.style1 h2 {
+    font-weight: 700;
+    font-size: 2em;
+    letter-spacing: 0.075em;
+    line-height: 1.5em;
+}
+
+header.style1 h3 {
+    font-weight: 525;
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+    color: grey;
+}
+
+header.style2 {
+    text-align: left;
+    padding: 0 0 0 0;
+}
+
+header.style2 h3 {
+    font-weight: 700;
+    font-size: 1em;
+    letter-spacing: 0.025em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+header.style1 p {
+    color: #b1b4b9;
+    display: block;
+    margin: 1.15em 0 0 0;
+    font-size: 1.3em;
+    letter-spacing: 0.075em;
+    line-height: 1.5em;
+}
+
+/* ==========================================================================
+    IMAGE
+    ** GINYU **
+========================================================================== */
+.image {
+    display: inline-block;
+}
+
+.image img {
+    display: block;
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 15px 15px 15px 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.image.fit {
+    display: block;
+    width: 100%;
+}
+
+.imgcontainer{
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin: 0 0 0.75em 0;
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+}
+
+.centeredtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    color: black;
+}
+
+.boxpost ul {
+    text-align: center;
+}
+
+/* ==========================================================================
+    LIST:
+    styling section for the "learn more"
+========================================================================== */
+
+/* Highlights */
+#learnmore .learning {
+    margin: 1em 1em 1em 1em;
+}
+
+#learnmode .learning h3 {
+    color: #e97770;
+    margin: 0 0 0.75em 0;
+    font-size: 1.15em;
+    letter-spacing: 0.05em;
+}
+
+#learnmode .learning ul {
+    text-align:center;
+    display:block;
+}
+
+#learnmore .learning a {
+    text-align:center;
+    display:block;
+}
+
+/* ==========================================================================
+    SLOGAN:
+    styling section for the organization's slogan/name
+========================================================================== */
+
+#slogan {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 1.5em;
+}
+
+#slogan h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+}
+
+#slogan p {
+    color: #eee;
+    color: white;
+    margin: 1.25em 0 0 0;
+    display: block;
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+}
+
+/* ==========================================================================
+    HEADER:
+    styling for the header section of the webpage
+========================================================================== */
+
+#header {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 24em;
+    background-color: black;
+    background: url("https://images.squarespace-cdn.com/content/v1/5a69a60251a584315209839f/1516884124397-DV7YMOT94D08CZ4YK7OI/ke17ZwdGBToddI8pDm48kA_SSaoz4elkj-HsZd8gX3Z7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UWPwZyNcweDIvdeL5kotwkIXjs9g0WibSO_cU-Ijy4Pwg6poS-6WGGnXqDacZer4yQ/24059317_1653498501356325_9161046572971584574_o.jpg?format=1500w") center center;
+    background-size: cover;
+    padding: 0;
+}
+
+
+/* ==========================================================================
+    MENU:
+    styling for the menu bar
+========================================================================== */
+
+#menu {
+    position: absolute;
+    display: block;
+    top: 2.5em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#menu > ul > li {
+    border-radius: 0.35em;
+    display: inline-block;
+    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+    text-align: center;
+    padding: 0 1.5em 0 1.5em;
+}
+
+/* text styling for the navigation bar*/
+#menu > ul > li > a {
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.7em;
+    letter-spacing: 0.25em;
+    height: 5em;
+    line-height: 5em;
+    transition: all .25s ease-in-out;
+    outline: 0;
+}
+
+/* hovering effect for the navigation bar */
+#menu > ul > li:hover > a {
+    color: grey;
+}
+
+/* ==========================================================================
+    FOOTER:
+    styling for content within footer
+========================================================================== */
+
+#footer {
+    background: #282b34;
+    color: white;
+    padding-bottom: 7em;
+}
+
+#footer .title {
+    background: #282b34;
+}
+
+#copyright {
+    text-align: center;
+    padding-top: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* ==========================================================================
+    Carousel:
+    styling for the photo slide show 
+========================================================================== */
+img {
+    vertical-align: middle;
+    border-radius: 15px 15px 15px 15px;
+}
+
+iframe {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: 5em 5em 5em 5em;
+    width:800px; 
+    margin:0 auto;"
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+
+/* ==========================================================================
+    Form:
+    styling for the photo slide show 
+========================================================================== */
+
+section#submitform {
+    height: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.submittext{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.actions {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    border: 0;
+    background: #eee;
+    box-shadow: inset 0px 0px 1px 0px black;
+    padding: 1em 1em 1em 1em;
+    line-height: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+form ul.actions {
+  margin-top: inherit;
+}
+
+/* ==========================================================================
+    Buttons
+========================================================================== */
+
+.course-button {
+    font: bold 15px Arial;
+    text-decoration: none;
+    text-align: center;
+    background-color: #404040;
+    color: white;
+    padding: 2px 6px 2px 6px;
+    border-top: 2px solid grey;
+    border-right: 2px solid grey;
+    border-bottom: 2px solid grey;
+    border-left: 2px solid grey;
+}
+
+.button-container a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 10%;
+
+}
+
+/* ==========================================================================
+    Social Media
+========================================================================== */
+.footer-social-icons{
+    margin: 0 auto;
+    width: fit-content;
+    color: white;
+}
+
+.socialList li {
+    float: left;
+}
+
+.socialList img {
+    max-width: 50px;
+}
